@@ -72,7 +72,7 @@ export default function EventsPage() {
       id: 9,
       title: "Welcome Mixer",
       date: "September 5, 2024",
-      image: "/events/CulturalNight2.jpg",
+      image: "/events/culturalNight2.jpg",
     },
   ];
 
@@ -156,7 +156,7 @@ export default function EventsPage() {
               >
                 <div className="relative h-64 w-full">
                   <Image
-                    src={event.image || "/placeholder.svg"}
+                    src={event.image || "/events/hackathon1.jpg"}
                     alt={event.title}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
