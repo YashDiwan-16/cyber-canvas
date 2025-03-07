@@ -12,7 +12,7 @@ export default function Home() {
         <div className="container relative px-4 py-16 md:py-24 lg:py-32 flex flex-col items-center text-center">
           <div className="mb-8">
             <Image
-              src="/placeholder.svg?height=120&width=120"
+              src="/logo/cresalogo.jpeg"
               alt="Club Logo"
               width={120}
               height={120}
@@ -22,7 +22,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
             Welcome to{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-              ClubName
+              CRESA
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mb-8">

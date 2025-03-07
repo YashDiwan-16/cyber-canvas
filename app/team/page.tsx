@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Linkedin, Mail, Github } from "lucide-react";
 
 export default function TeamPage() {
-  // Sample team data
   const executiveTeam = [
     {
       id: 1,
@@ -90,23 +89,20 @@ export default function TeamPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-muted py-16 md:py-24">
-        <div className="container text-center">
-          <h1 className="text-4xl font-bold tracking-tight mb-6">
+      <section className="bg-muted py-12 sm:py-16 text-center">
+        <div className="container">
+          <h1 className="text-4xl font-bold tracking-tight mb-4">
             Meet Our Team
           </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
             Get to know the dedicated individuals who make our club thrive.
           </p>
         </div>
       </section>
 
       {/* Executive Team */}
-      <section className="container py-16">
-        <h2 className="text-3xl font-bold mb-12 text-center">
-          Executive Board
-        </h2>
-
+      <section className="container py-12 sm:py-16">
+        <h2 className="text-3xl font-bold mb-8 text-center">Executive Board</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {executiveTeam.map((member) => (
             <div
@@ -115,37 +111,34 @@ export default function TeamPage() {
             >
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src={member.image || "/placeholder.svg"}
+                  src={member.image}
                   alt={member.name}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 text-center">
                 <h3 className="text-xl font-bold">{member.name}</h3>
                 <p className="text-primary font-medium mb-3">{member.role}</p>
-                <p className="text-muted-foreground mb-4">{member.bio}</p>
-                <div className="flex space-x-3">
+                <p className="text-muted-foreground text-sm">{member.bio}</p>
+                <div className="flex justify-center space-x-3 mt-4">
                   <Link
                     href="#"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-muted-foreground hover:text-foreground"
                   >
                     <Linkedin className="h-5 w-5" />
-                    <span className="sr-only">LinkedIn</span>
                   </Link>
                   <Link
                     href="#"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-muted-foreground hover:text-foreground"
                   >
                     <Mail className="h-5 w-5" />
-                    <span className="sr-only">Email</span>
                   </Link>
                   <Link
                     href="#"
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-muted-foreground hover:text-foreground"
                   >
                     <Github className="h-5 w-5" />
-                    <span className="sr-only">GitHub</span>
                   </Link>
                 </div>
               </div>
@@ -155,10 +148,9 @@ export default function TeamPage() {
       </section>
 
       {/* Team Members */}
-      <section className="bg-muted py-16">
+      <section className="bg-muted py-12 sm:py-16">
         <div className="container">
-          <h2 className="text-3xl font-bold mb-12 text-center">Team Members</h2>
-
+          <h2 className="text-3xl font-bold mb-8 text-center">Team Members</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {teamMembers.map((member) => (
               <div
@@ -167,7 +159,7 @@ export default function TeamPage() {
               >
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={member.image || "/placeholder.svg"}
+                    src={member.image}
                     alt={member.name}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -179,17 +171,15 @@ export default function TeamPage() {
                   <div className="flex justify-center space-x-3 mt-3">
                     <Link
                       href="#"
-                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      className="text-muted-foreground hover:text-foreground"
                     >
                       <Linkedin className="h-4 w-4" />
-                      <span className="sr-only">LinkedIn</span>
                     </Link>
                     <Link
                       href="#"
-                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      className="text-muted-foreground hover:text-foreground"
                     >
                       <Mail className="h-4 w-4" />
-                      <span className="sr-only">Email</span>
                     </Link>
                   </div>
                 </div>
@@ -200,13 +190,13 @@ export default function TeamPage() {
       </section>
 
       {/* Join the Team */}
-      <section className="container py-16 text-center">
+      <section className="container py-12 sm:py-16 text-center">
         <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
+        <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
           Interested in becoming a part of our team? We're always looking for
           passionate individuals to join us.
         </p>
-        <Button size="lg" asChild>
+        <Button size="lg" asChild className="mt-2">
           <Link href="/contact">Apply Now</Link>
         </Button>
       </section>
