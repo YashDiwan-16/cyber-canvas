@@ -15,7 +15,7 @@ export default function AboutPage() {
                 About Our Club
               </h1>
               <p className="text-xl text-muted-foreground mb-6">
-                Founded in 2015, our club has been at the forefront of fostering
+                Founded in 2023, our club has been at the forefront of fostering
                 innovation, collaboration, and excellence among students.
               </p>
               <Button asChild>
@@ -24,7 +24,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[300px] lg:h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Club+Photo"
+                src="/cresalogo.jpeg"
                 alt="Club members"
                 fill
                 className="object-cover"
@@ -79,7 +79,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div className="md:text-right md:pr-12">
                   <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-0 w-4 h-4 rounded-full bg-primary"></div>
-                  <h3 className="text-xl font-bold mb-2">2015: Foundation</h3>
+                  <h3 className="text-xl font-bold mb-2">2023: Foundation</h3>
                   <p className="text-muted-foreground">
                     Our club was founded by a group of passionate students who
                     wanted to create a space for collaboration and innovation.
@@ -87,7 +87,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-[200px] rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=2015"
+                    src="/events/sports2.jpg"
                     alt="Foundation"
                     fill
                     className="object-cover"
@@ -100,7 +100,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div className="order-2 md:order-1 relative h-[200px] rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=2018"
+                    src="/events/sports2.jpg"
                     alt="Growth"
                     fill
                     className="object-cover"
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 </div>
                 <div className="order-1 md:order-2 md:pl-12">
                   <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-0 w-4 h-4 rounded-full bg-primary"></div>
-                  <h3 className="text-xl font-bold mb-2">2018: Expansion</h3>
+                  <h3 className="text-xl font-bold mb-2">2024: Expansion</h3>
                   <p className="text-muted-foreground">
                     We expanded our reach and began hosting larger events,
                     including our annual conference that attracts students from
@@ -122,7 +122,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div className="md:text-right md:pr-12">
                   <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-0 w-4 h-4 rounded-full bg-primary"></div>
-                  <h3 className="text-xl font-bold mb-2">2021: Recognition</h3>
+                  <h3 className="text-xl font-bold mb-2">2025: Recognition</h3>
                   <p className="text-muted-foreground">
                     Our club received the "Outstanding Student Organization"
                     award for our contributions to campus life and student
@@ -131,7 +131,7 @@ export default function AboutPage() {
                 </div>
                 <div className="relative h-[200px] rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=2021"
+                    src="/events/sports2.jpg"
                     alt="Recognition"
                     fill
                     className="object-cover"
@@ -144,7 +144,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div className="order-2 md:order-1 relative h-[200px] rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=200&width=300&text=Today"
+                    src="/events/sports2.jpg"
                     alt="Present day"
                     fill
                     className="object-cover"

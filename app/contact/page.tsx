@@ -203,7 +203,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <h2 className="text-2xl font-bold mb-6">Office Hours</h2>
               <ul className="space-y-2">
                 <li className="flex justify-between">
@@ -221,7 +221,7 @@ export default function ContactPage() {
                   <span className="text-muted-foreground">Closed</span>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <div>
               <h2 className="text-2xl font-bold mb-6">Follow Us</h2>
@@ -263,18 +263,24 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
+      {/* 
       {/* Map Section */}
-      <section className="py-16 bg-muted">
-        <div className="container">
-          <h2 className="text-2xl font-bold mb-6 text-center">Find Us</h2>
-          <div className="h-[400px] rounded-lg overflow-hidden border shadow-sm">
-            {/* Placeholder for Google Map */}
-            <div className="w-full h-full bg-card flex items-center justify-center">
-              <p className="text-muted-foreground">
-                Google Map would be embedded here
-              </p>
-            </div>
+      {/* Map Section */}
+      <section className="py-10 sm:py-16 bg-muted">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl sm:text-2xl font-bold mb-6 text-center">
+            Find Us
+          </h2>
+          <div className="w-full max-w-screen-md mx-auto h-[300px] sm:h-[400px] rounded-lg overflow-hidden border shadow-sm">
+            {/* Google Maps Embed */}
+            <iframe
+              title="Google Map"
+              className="w-full h-full border-0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.273282914895!2d73.75906487519485!3d18.6517287824674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e76c8fa205%3A0x1b210131915734fd!2sPCCOE%20-%20Pimpri%20Chinchwad%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1741346166613!5m2!1sen!2sin"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
