@@ -12,7 +12,7 @@ export default function Home() {
         <div className="container relative px-4 py-16 md:py-24 lg:py-32 flex flex-col items-center text-center">
           <div className="mb-8">
             <Image
-              src="/logo/cresalogo.jpeg"
+              src="cresalogo.jpeg"
               alt="Club Logo"
               width={120}
               height={120}
@@ -26,8 +26,8 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mb-8">
-            To foster a collaborative environment for students to
-            develop technical, cultural, and leadership skills.
+            To foster a collaborative environment for students to develop
+            technical, cultural, and leadership skills.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" asChild>
