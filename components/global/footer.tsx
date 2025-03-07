@@ -13,8 +13,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              To foster a collaborative environment for students to
-              develop technical, cultural, and leadership skills.
+              To foster a collaborative environment for students to develop
+              technical, cultural, and leadership skills.
             </p>
           </div>
 
@@ -70,35 +70,40 @@ export default function Footer() {
             <h3 className="text-sm font-medium">Follow Us</h3>
             <div className="flex space-x-4">
               <Link
-                href="#"
+                target="_blank"
+                href="https://facebook.com"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
               <Link
-                href="#"
+                target="_blank"
+                href="https://www.instagram.com/cresa_pccoe?igsh=MzVxejEzdGQ3cmMx"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
               <Link
-                href="#"
+                target="_blank"
+                href="https://x.com"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
               <Link
-                href="#"
+                target="_blank"
+                href="https://www.linkedin.com/in/computer-engineering-regional-student-association-cresa-155673332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link
-                href="#"
+                target="_blank"
+                href="yash.diwan23@pccoepune.org"
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Mail className="h-5 w-5" />

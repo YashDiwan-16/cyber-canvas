@@ -227,29 +227,33 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold mb-6">Follow Us</h2>
               <div className="flex space-x-4">
                 <Link
-                  href="#"
+                  href="https://www.facebook.com"
+                  target="_blank"
                   className="bg-muted hover:bg-primary hover:text-primary-foreground transition-colors p-3 rounded-full"
                 >
                   <Facebook className="h-5 w-5" />
                   <span className="sr-only">Facebook</span>
                 </Link>
                 <Link
-                  href="#"
+                  target="_blank"
+                  href="https://www.instagram.com/cresa_pccoe?igsh=MzVxejEzdGQ3cmMx"
                   className="bg-muted hover:bg-primary hover:text-primary-foreground transition-colors p-3 rounded-full"
                 >
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </Link>
                 <Link
-                  href="#"
+                  target="_blank"
+                  href="https://twitter.com"
                   className="bg-muted hover:bg-primary hover:text-primary-foreground transition-colors p-3 rounded-full"
                 >
                   <Twitter className="h-5 w-5" />
                   <span className="sr-only">Twitter</span>
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/in/computer-engineering-regional-student-association-cresa-155673332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
                   className="bg-muted hover:bg-primary hover:text-primary-foreground transition-colors p-3 rounded-full"
+                  target="_blank"
                 >
                   <Linkedin className="h-5 w-5" />
                   <span className="sr-only">LinkedIn</span>
