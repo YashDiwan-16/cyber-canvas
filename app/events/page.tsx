@@ -14,7 +14,7 @@ export default function EventsPage() {
       location: "Tech Building, Room 101",
       description:
         "Learn the basics of web development with HTML, CSS, and JavaScript.",
-      image: "/placeholder.svg?height=300&width=500&text=Web+Dev",
+      image: "/events/hackathon3.jpg",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ export default function EventsPage() {
       location: "Student Center, Main Hall",
       description:
         "Connect with professionals from leading tech companies in a casual setting.",
-      image: "/placeholder.svg?height=300&width=500&text=Networking",
+      image: "/events/hackathon1.jpg",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ export default function EventsPage() {
       time: "9:00 AM - 5:00 PM",
       location: "Innovation Center",
       description: "A 48-hour coding competition to solve real-world problems.",
-      image: "/placeholder.svg?height=300&width=500&text=Hackathon",
+      image: "/events/hackathon2.jpg",
     },
   ];
 
@@ -42,37 +42,37 @@ export default function EventsPage() {
       id: 4,
       title: "Guest Speaker: AI in Healthcare",
       date: "February 10, 2025",
-      image: "/placeholder.svg?height=300&width=500&text=AI+Healthcare",
+      image: "/events/hackathon3.jpg",
     },
     {
       id: 5,
       title: "Resume Workshop",
       date: "January 25, 2025",
-      image: "/placeholder.svg?height=300&width=500&text=Resume",
+      image: "/events/hackathon1.jpg",
     },
     {
       id: 6,
       title: "Winter Social",
       date: "December 15, 2024",
-      image: "/placeholder.svg?height=300&width=500&text=Winter+Social",
+      image: "/events/gathering1.jpg",
     },
     {
       id: 7,
       title: "Tech Talk: Blockchain Fundamentals",
       date: "November 20, 2024",
-      image: "/placeholder.svg?height=300&width=500&text=Blockchain",
+      image: "/events/hackathon2.jpg",
     },
     {
       id: 8,
       title: "Fall Hackathon",
       date: "October 8-9, 2024",
-      image: "/placeholder.svg?height=300&width=500&text=Fall+Hackathon",
+      image: "/events/hackathon2.jpg",
     },
     {
       id: 9,
       title: "Welcome Mixer",
       date: "September 5, 2024",
-      image: "/placeholder.svg?height=300&width=500&text=Welcome",
+      image: "/events/CulturalNight2.jpg",
     },
   ];
 
