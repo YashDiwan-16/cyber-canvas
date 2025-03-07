@@ -13,8 +13,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Empowering students to learn, grow, and connect through exciting
-              events and activities.
+              To foster a collaborative environment for students to
+              develop technical, cultural, and leadership skills.
             </p>
           </div>
 

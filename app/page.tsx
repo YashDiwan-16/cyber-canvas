@@ -22,7 +22,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
             Welcome to{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
-              CRESA
+              Cresa Club
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mb-8">
