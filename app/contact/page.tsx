@@ -24,6 +24,7 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
+import axios from 'axios';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -52,20 +53,17 @@ export default function ContactPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      const response = await fetch('https://narad-kdmq.onrender.com/api/v1/email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+    console.log('Form Data:', formData);
 
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
+    try {
+      const response = await axios.post('https://narad-kdmq.onrender.com/api/v1/email', formData);
+
+      if (!response) {
+        throw new Error('Failed to send message');
       }
 
-      const data = await response.json();
+      const data = response.data;
+
       console.log('Success:', data);
 
       setIsSubmitted(true);
