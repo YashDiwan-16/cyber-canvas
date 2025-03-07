@@ -26,8 +26,8 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mb-8">
-            Empowering students to learn, grow, and connect through exciting
-            events and activities.
+            To foster a collaborative environment for students to
+            develop technical, cultural, and leadership skills.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button size="lg" asChild>
