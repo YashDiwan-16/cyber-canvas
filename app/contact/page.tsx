@@ -35,6 +35,7 @@ export default function ContactPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -47,13 +48,26 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, subject: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch('https://narad-kdmq.onrender.com/api/v1/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      console.log('Success:', data);
+
       setIsSubmitted(true);
       setFormData({
         name: "",
@@ -61,7 +75,12 @@ export default function ContactPage() {
         subject: "",
         message: "",
       });
-    }, 1500);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setError('Failed to send your message. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
