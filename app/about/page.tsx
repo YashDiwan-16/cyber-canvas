@@ -2,6 +2,30 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import MissionVisionCard from "@/components/mission-vision-card";
+
+const MissionData :{title: string;
+  desc1: string;
+  desc2: string;}[]= [
+    {
+      title:"Our Mission",
+      desc1:" To create a vibrant community where students can develop theirs skills, explore new ideas, and build lasting connections that extend beyond their academic journey.",
+      desc2: `We strive to provide opportunities for personal and professional
+              growth through workshops, competitions, networking events, and
+              collaborative projects.`
+    },
+
+    {
+      title:"Our Vission",
+      desc1:`   To be recognized as the premier student organization that empowers
+              members to become leaders, innovators, and change-makers in their
+              respective fields.`,
+      desc2:` We envision a community where creativity flourishes, diversity is
+              celebrated, and every member feels supported in pursuing their
+              passions.`
+    }
+  ];
+
 
 export default function AboutPage() {
   return (
@@ -37,33 +61,13 @@ export default function AboutPage() {
       {/* Mission & Vision */}
       <section className="container py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-card rounded-lg p-8 border shadow-sm">
-            <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-            <p className="text-muted-foreground mb-6">
-              To create a vibrant community where students can develop their
-              skills, explore new ideas, and build lasting connections that
-              extend beyond their academic journey.
-            </p>
-            <p className="text-muted-foreground">
-              We strive to provide opportunities for personal and professional
-              growth through workshops, competitions, networking events, and
-              collaborative projects.
-            </p>
-          </div>
-
-          <div className="bg-card rounded-lg p-8 border shadow-sm">
-            <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
-            <p className="text-muted-foreground mb-6">
-              To be recognized as the premier student organization that empowers
-              members to become leaders, innovators, and change-makers in their
-              respective fields.
-            </p>
-            <p className="text-muted-foreground">
-              We envision a community where creativity flourishes, diversity is
-              celebrated, and every member feels supported in pursuing their
-              passions.
-            </p>
-          </div>
+          
+        {MissionData.map((
+        mission,index
+        )=>(
+          <MissionVisionCard {...mission} key={index}/>
+        ))}
+          
         </div>
       </section>
 
@@ -250,3 +254,8 @@ export default function AboutPage() {
     </>
   );
 }
+
+
+
+
+
